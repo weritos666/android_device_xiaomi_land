@@ -1,11 +1,11 @@
 # ADSP - from santoni (Redmi 4X)
-bin/adsprpcd
-vendor/lib/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libadsp_default_listener.so
+bin/adsprpcd|71d86e9bb37476e8440d79a7a8e45548372211e2
+vendor/lib/libadsprpc.so|97db91154c01c11ff3c2bb4f6c9c20f84619de0a
+vendor/lib/libadsp_default_listener.so|b427880a95928cc66fb81405a898c39adb519ae1
+vendor/lib/libfastcvadsp_stub.so|cbd9dba16c284505342b868969d1c165564e05f4
+vendor/lib/libfastcvopt.so|7155e7f75d1f19e3df7b961b3cb01db6a418b3fd
+vendor/lib64/libadsprpc.so|5d25a40568dc831624d13578b6d66464dae25714
+vendor/lib64/libadsp_default_listener.so|4de494fde71aae92abd1fad8bc681665ff3ccf01
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so
@@ -106,38 +106,38 @@ etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
 # Bluetooth - from santoni (Redmi 4X)
-bin/btnvtool
-bin/hci_qcomm_init
-vendor/lib/libbtnv.so
-vendor/lib64/libbtnv.so
+bin/btnvtool|45aa5ec26978d6e5f43342ccae2b2c0e1c3b0a4f
+bin/hci_qcomm_init|aabd009cba8cff4c37b7ef51aef52aa2c2c5c3e5
+vendor/lib/libbtnv.so|3aa0dbcfd604ae8930636989d0b8302404373a81
+vendor/lib64/libbtnv.so|a131e10a686bd373934037bb77a86af0b99e3e4e
 
 # CNE - from santoni (Redmi 4X)
-bin/cnd
-etc/cne/SwimConfig.xml
-etc/cne/andsfCne.xml
-etc/permissions/ConnectivityExt.xml
-etc/permissions/cneapiclient.xml
-etc/permissions/com.quicinc.cne.xml
-framework/ConnectivityExt.jar
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
-vendor/lib/libNimsWrap.so
-vendor/lib/libcne.so
-vendor/lib/libcneapiclient.so
-vendor/lib/libcneconn.so
-vendor/lib/libcneqmiutils.so
-vendor/lib/libvendorconn.so
-vendor/lib/libwqe.so
-vendor/lib/libxml.so
-vendor/lib64/libNimsWrap.so
-vendor/lib64/libcne.so
-vendor/lib64/libcneapiclient.so
-vendor/lib64/libcneconn.so
-vendor/lib64/libcneqmiutils.so
-vendor/lib64/libvendorconn.so
-vendor/lib64/libwqe.so
-vendor/lib64/libxml.so
+bin/cnd|ce4d3e707a963d9dafd06849f5beae0c3d23c5a1
+etc/cne/SwimConfig.xml|68dedcca1c2ac18cf81fdee1854de16a3a60dd02
+etc/cne/andsfCne.xml|f81a69eac5dd16bbb195a0fcf1211a51cc014553
+etc/permissions/ConnectivityExt.xml|da7fd0d0da06933b19b657addd14e6858b73e13c
+etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
+etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
+framework/ConnectivityExt.jar|67025d09bbc7bb87bca1d15ab9c133eeb1ef2b9d
+framework/cneapiclient.jar|3cb56a579341acfb16d2be2e41bac2c7b6ac34b4
+framework/com.quicinc.cne.jar|773982968679874bc77847b641ef894e7ee09957
+-priv-app/CNEService/CNEService.apk|8ca303765b3ce8a1a062968248207c1a609946a6
+vendor/lib/libNimsWrap.so|8f7fec208041558741baca4d3fa6195e3b424ed7
+vendor/lib/libcne.so|aa879c0d8802ea3ed008bdc09e06f5d11c4a1251
+vendor/lib/libcneapiclient.so|fc08801802ed4ed07fc14c50d51eeea4e1cd6286
+vendor/lib/libcneconn.so|4150f7f0e66e79faa4651d8cee2515a28794fe37
+vendor/lib/libcneqmiutils.so|df7703daf0e8dec5dbfe0b682f9722229df0a9de
+vendor/lib/libvendorconn.so|ba2a5176b387ed6103d213fa1c8622896d60e532
+vendor/lib/libwqe.so|81f58d6bd8f9937070d99495c46ab6f8a89ff6e8
+vendor/lib/libxml.so|18b92add6a17761f4ef3e049d25e8159c4712ac2
+vendor/lib64/libNimsWrap.so|3206b1ffc3671bd4f8ea557f6304a251b6df4702
+vendor/lib64/libcne.so|0b40b854e0dcb9717da22267669219b71b3666c1
+vendor/lib64/libcneapiclient.so|56a8f71038ea854336cfaab6992247cfb22011d5
+vendor/lib64/libcneconn.so|c8236f8f0f53af4a73d9da8336f0b2a8f9b82981
+vendor/lib64/libcneqmiutils.so|2297fe027844422726b1f8566519efd41736b355
+vendor/lib64/libvendorconn.so|45cb840b3d34efd89525aca39af550ea55339138
+vendor/lib64/libwqe.so|b1b4cbab2b0889ca83a0632c1d87eb4ac0714596
+vendor/lib64/libxml.so|d9a8b984c537ecd81d7b2dd91dbc192dfe6cebe7
 
 # Camera
 bin/mm-qcamera-daemon
@@ -1055,24 +1055,24 @@ vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so
 bin/hvdcp_opti
 
 # DPM - from santoni (Redmi 4X)
-bin/dpmd
-etc/dpm/dpm.conf
-etc/dpm/nsrm/NsrmConfiguration.xml
-etc/permissions/com.qti.dpmframework.xml
-etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
-vendor/lib/libdpmctmgr.so
-vendor/lib/libdpmfdmgr.so
-vendor/lib/libdpmframework.so
-vendor/lib/libdpmnsrm.so
-vendor/lib/libdpmtcm.so
-vendor/lib64/libdpmctmgr.so
-vendor/lib64/libdpmfdmgr.so
-vendor/lib64/libdpmframework.so
-vendor/lib64/libdpmnsrm.so
-vendor/lib64/libdpmtcm.so
+bin/dpmd|e54c1714a9742104b26270bb2e8c68b13e31e6db
+etc/dpm/dpm.conf|b7cb0520a5a4284380ae43c7f28d8fac81f5271f
+etc/dpm/nsrm/NsrmConfiguration.xml|e544112e870d378621d4d4004c24d33bd99eec4c
+etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
+etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
+framework/com.qti.dpmframework.jar|7d855e9cf5d10cd88cdcd9c9bd16120afcaa7e72
+framework/dpmapi.jar|0015235ff71d52d1b340b10ce4fa737fa26975ef
+framework/tcmclient.jar|e7149c664f4b1841139ab816c0d4e0942df0583c
+vendor/lib/libdpmctmgr.so|9998fb47922ec5fb8c9c8cdae65c8f0cfa119cf3
+vendor/lib/libdpmfdmgr.so|f0759efe4fcf5733def2cd4fdabde43449273e39
+vendor/lib/libdpmframework.so|c7faa2b99e3425ad3f3d779390de02fedff058a2
+vendor/lib/libdpmnsrm.so|56255802dcc3bfff6094d3f39bf5c636f2e9eb63
+vendor/lib/libdpmtcm.so|920de84cdac03220386d9103956866c22041afd8
+vendor/lib64/libdpmctmgr.so|9da94f6adfbcfdcc65ea05185b9ef88271ac61ca
+vendor/lib64/libdpmfdmgr.so|b5f2fb5f20b5a95b087f5123e9fc02019f8af9a3
+vendor/lib64/libdpmframework.so|3ac49fb28f81f476a7c0a60f3bf4ecdf2be812c5
+vendor/lib64/libdpmnsrm.so|2825022782d58fc3db824967381f08762bb2137c
+vendor/lib64/libdpmtcm.so|4c2025b0882276ff7e742591b45c6e728ffedb11
 
 # DRM - from santoni (Redmi 4X)
 bin/qseecomd|68ae01eaee55d70351479733366d06a6ca70c5cf
@@ -1119,76 +1119,76 @@ lib64/libfpnav.so
 lib64/libfpservice.so
 
 # Gatekeeper - from santoni (Redmi 4X)
-vendor/lib/hw/gatekeeper.msm8937.so
-vendor/lib64/hw/gatekeeper.msm8937.so
+vendor/lib/hw/gatekeeper.msm8937.so|f98f0302c40ff0f444aa2280dc152a8f62a89a78
+vendor/lib64/hw/gatekeeper.msm8937.so|c75ddcce6b39cb4d0d2f65e7cc9b603f8f68b5d2
 
 # GPS - from santoni (Redmi 4X)
-bin/loc_launcher
-bin/lowi-server
-bin/xtwifi-client
-bin/xtwifi-inet-agent
-etc/flp.conf
-etc/izat.conf
-etc/lowi.conf
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.vzw_library.xml
-etc/permissions/com.qualcomm.location.xml
-etc/permissions/izat.xt.srv.xml
-etc/cacert_location.pem
-etc/xtra_root_cert.pem
-etc/sap.conf
-etc/xtwifi.conf
--framework/com.qti.location.sdk.jar
--framework/com.qualcomm.location.vzw_library.jar
--framework/izat.xt.srv.jar
-lib/libloc_api_v02.so
-lib/libloc_ds_api.so
-lib64/libloc_api_v02.so
-lib64/libloc_ds_api.so
+bin/loc_launcher|a0f90c2b169a1075714a471cef1e67e77f43d184
+bin/lowi-server|ba05c97b23a9616c3e48f3dedd5fef4b7b4f163d
+bin/xtwifi-client|4c1680392f94d91a362576ea92d26b7ffca24b82
+bin/xtwifi-inet-agent|c5603c50b4df155d3791c749d6f31de5d4b8f28f
+etc/flp.conf|7158f2dddd34a08ba7eadc42987f325205f44c19
+etc/izat.conf|b90eae1a51d8cb12c69ccb4bbce5b0a7d53ce7dd
+etc/lowi.conf|dcd283c7989c6162d0e4523fba2d169a0f6b47f3
+etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
+etc/permissions/com.qualcomm.location.vzw_library.xml|c25d37a4aa23cfd98d01d5d3121e43d0b6b37f05
+etc/permissions/com.qualcomm.location.xml|8896841bc23fa47bb26fb3dacfa82747f6966330
+etc/permissions/izat.xt.srv.xml|bc01cae0fb167d6c2d0efaacacb54ca661571a4b
+etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
+etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
+etc/sap.conf|1dc584993c6f3f100ded6cbe547188e770d2d5b5
+etc/xtwifi.conf|32c6869255d26ccf35641156ec7e3349d6553dfd
+-framework/com.qti.location.sdk.jar|6e5b057dfb664a83bc0128e9291d959b1b5d151a
+-framework/com.qualcomm.location.vzw_library.jar|7f5e8ef70a853a154f8367fafdbdd5b103de7348
+-framework/izat.xt.srv.jar|da31c6183f8d29251ce5656ddab6d4b386934382
+lib/libloc_api_v02.so|fadc6ab0518bdb41c1f85c3dbca1e7ca65233bba
+lib/libloc_ds_api.so|ee2849df428dc766e1c460fe356e21cc0db86735
+lib64/libloc_api_v02.so|550781d6e9b236bf9c577df6f96d5267095e3683
+lib64/libloc_ds_api.so|50ae4dbf534a423b7a9a12bb1b09c7739e266321
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk|ab8cd109897928265235f393a2e71250ec5d28af
-vendor/bin/slim_daemon
-vendor/lib/hw/flp.default.so
-vendor/lib/libalarmservice_jni.so
-vendor/lib/libdataitems.so
-vendor/lib/libflp.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-vendor/lib/libloc_ext.so
-vendor/lib/liblocationservice.so
-vendor/lib/liblocationservice_glue.so
-vendor/lib/liblowi_client.so
-vendor/lib/liblowi_wifihal.so
-vendor/lib/liblowi_wifihal_nl.so
-vendor/lib/libulp2.so
-vendor/lib/libxtadapter.so
-vendor/lib/libxtwifi_ulp_adaptor.so
-vendor/lib/libxt_native.so
-vendor/lib64/hw/flp.default.so
-vendor/lib64/libalarmservice_jni.so
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libflp.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libgeofence.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_ext.so
-vendor/lib64/libloc_xtra.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/liblowi_wifihal_nl.so
-vendor/lib64/libulp2.so
-vendor/lib64/libxt_native.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_ulp_adaptor.so
-vendor/lib64/libDRPlugin.so
-vendor/lib64/libdrplugin_client.so
-vendor/lib64/libevent_observer.so
+vendor/bin/slim_daemon|db87545aa667dd9c6827637d741b314fa9656904
+vendor/lib/hw/flp.default.so|4816ffc51b35e8f7bd8c620861812728f7a4df4a
+vendor/lib/libalarmservice_jni.so|229c790655fe99ca1bea640cfd5063e0f55aad6f
+vendor/lib/libdataitems.so|1713d337d919782c85f261bc90ec7ca3d1bc1321
+vendor/lib/libflp.so|ae33e0e417f4e355d44a9d4155586a182492100b
+vendor/lib/libgeofence.so|be6324bbcec11d4638b569ffaf62b139d712807d
+vendor/lib/libizat_core.so|d5b08f9ce8272c6fca0b5d8a8236eb723e9d7173
+vendor/lib/liblbs_core.so|0c44f21739b4bbd7add6c5222dd9a6901fa40e7a
+vendor/lib/libloc_ext.so|0f129363a6910cfc3751f61b01af82e87ea80acc
+vendor/lib/liblocationservice.so|0dfa60982b77e5fc4419db0dd8f6d9397a676a84
+vendor/lib/liblocationservice_glue.so|8e9ff3c43de7221e90df857c044b0e48192efcd2
+vendor/lib/liblowi_client.so|9d101d8b77fb434357ae556ab843a74b7320f775
+vendor/lib/liblowi_wifihal.so|935f7135f5ad082df93d97c261cbbc86ed2fe911
+vendor/lib/liblowi_wifihal_nl.so|3527406c7aa3e29c087154f6c6b19b6c2019988e
+vendor/lib/libulp2.so|10c43fc996e2a6ff0ccbec58bb3a024dde36c359
+vendor/lib/libxtadapter.so|a336a5845f4e9514206de5541e926ed4d0d1ea77
+vendor/lib/libxtwifi_ulp_adaptor.so|54a026a89779981ca848990bdbb156a44219f5dd
+vendor/lib/libxt_native.so|1f67bd53ad08cbf900679c2e499fa6ec20ca0328
+vendor/lib64/hw/flp.default.so|05982a6935d54aeb0b879d7bcf8eb05b7c4dce68
+vendor/lib64/libalarmservice_jni.so|17662b984fe6d866619a3c185441f1015173fe20
+vendor/lib64/libasn1cper.so|d189b533db01cf8cdfb54d1636ebd44f4698a208
+vendor/lib64/libasn1crt.so|38ab9cc35016cf05251f71d5c1c0a99656daf1a6
+vendor/lib64/libasn1crtx.so|6dc74180ae91edb8d770913b58cf2de1890c2134
+vendor/lib64/libdataitems.so|c38f1fa48495f28567f011d3a00f5190d94f4823
+vendor/lib64/libflp.so|b87f253f2e866556e7245e524eaa71c305ee1cc3
+vendor/lib64/libgdtap.so|35693a6e8fcbea847ceddf950f487715e06397e0
+vendor/lib64/libgeofence.so|34544ed6b26a4024e00fcb2eaa5c9716344ffd23
+vendor/lib64/libizat_core.so|1aa2e56294c367634c3e0c29348af845e607a546
+vendor/lib64/liblbs_core.so|27b04dcfb2646324eb52b9b85ecf7313e0ecd034
+vendor/lib64/libloc_ext.so|b168a68ad246615cd072e3b6434a84967ad49eb1
+vendor/lib64/libloc_xtra.so|cf2adc25bee8fa13ad6f6a854ee0cf5412f55c10
+vendor/lib64/liblocationservice.so|ec73666f19b9a3fdc1cf7fd06d0185f18381e8c2
+vendor/lib64/liblocationservice_glue.so|b03e90697ea247776033abeb39ed2037efa779ef
+vendor/lib64/liblowi_client.so|8ce7733439a58e575c474710124a5ce2f1293e46
+vendor/lib64/liblowi_wifihal.so|d48592b3da3a220880b8d8b13caadc25c7f5ced8
+vendor/lib64/liblowi_wifihal_nl.so|5624fb16a5048af038c038a21327643bd8b23383
+vendor/lib64/libulp2.so|73fed4f75d79863bebda5012dd69a30c22a3e832
+vendor/lib64/libxt_native.so|976c3e491a4a2b656570cff7b56c952e132386f1
+vendor/lib64/libxtadapter.so|f4d3c16117adc5a77d9ead2d058682af10f77856
+vendor/lib64/libxtwifi_ulp_adaptor.so|1164ac63ea0e202931122500f5ed58e48874f813
+vendor/lib64/libDRPlugin.so|b00ae086b7fda447df361d2b6ae5274c55d640ab
+vendor/lib64/libdrplugin_client.so|2f199088ba268604233ef63c40d339a698b3cc9b
+vendor/lib64/libevent_observer.so|97e9828c5627c56ab2d1a595e720e80b0be4dc0f
 
 # Graphics - from santoni (Redmi 4X)
 vendor/lib/egl/eglSubDriverAndroid.so|a63af6bdc902cd7561464fc9414d169556e59335
@@ -1279,14 +1279,14 @@ vendor/lib64/libuiblur.so|4b3fabf5ded7c4af531abde681676fc5e9248494
 vendor/lib64/hw/vulkan.msm8937.so|7689a5f48716a871c0e42337f38e80bafbe04633
 
 # Graphics firmware - from santoni (Redmi 4X)
-etc/firmware/a530_gpmu.fw2
-etc/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw
-etc/firmware/a530v1_pfp.fw
-etc/firmware/a530v1_pm4.fw
-etc/firmware/a530v2_seq.fw2
-etc/firmware/a530v3_gpmu.fw2
-etc/firmware/a530v3_seq.fw2
+etc/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
+etc/firmware/a530_pfp.fw|b77d12df950f79607da79928284ccae49d82ac33
+etc/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
+etc/firmware/a530v1_pfp.fw|0864291b99bed712edfcffa94be7b4595d3af306
+etc/firmware/a530v1_pm4.fw|6a82a4fb4035fa2a933c1a26b5535d7ec7c0ac4c
+etc/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
+etc/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
+etc/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 
 #hbtp
 etc/firmware/hbtp/hbtpcfg_8917.dat
@@ -1308,9 +1308,9 @@ vendor/lib/hw/keystore.msm8937.so|2e93bba00f17931a02354f05ab83b25da4cc172a
 vendor/lib64/hw/keystore.msm8937.so|c3a99d799c53c153f4d7f3f758d60923b8c1cda5
 
 # Listen - from santoni (Redmi 4X)
-vendor/lib/hw/sound_trigger.primary.msm8937.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libsmwrapper.so
+vendor/lib/hw/sound_trigger.primary.msm8937.so|7b9487553d99862f3597a9c8ee91ba9a39ad1fb1
+vendor/lib/libadpcmdec.so|28e0b1ce5c48b3fa6cf1a67af7219ee52f563b1e
+vendor/lib/libsmwrapper.so|013eb0f6080e939b387ef0257379594075d3913f
 
 # Media - from santoni (Redmi 4X)
 etc/firmware/DE.o.msm8937|62c8a6ce7e6d81c3b9778d92db126e02a54e692f
@@ -1365,38 +1365,38 @@ vendor/media/LMspeed_508.emd|392b2150ecd454501a5951874a002ba80e40fc74
 vendor/media/PFFprec_600.emd|2e9e82a710ddeffa2ceb16bbbff980cd4013b3d8
 
 # Modem - from santoni (Redmi 4X)
-vendor/lib/libwms.so
-vendor/lib64/libwms.so
+vendor/lib/libwms.so|faa3397b38c1c9e55030eb08de9a26b54d1cdf64
+vendor/lib64/libwms.so|07b7150b69e87bcf0b39ec1fca10bcc39d96e858
 
 # Network - from santoni (Redmi 4X)
--priv-app/QtiTetherService/QtiTetherService.apk
-vendor/lib/libconnctrl.so
-vendor/lib/libQtiTether.so
-vendor/lib64/libconnctrl.so
-vendor/lib64/libQtiTether.so
+-priv-app/QtiTetherService/QtiTetherService.apk|ff1d849ba83574ac7169af33be4333df179394d6
+vendor/lib/libconnctrl.so|0cc2b980b5b8a852b9c6e041ca50ca2d65b800db
+vendor/lib/libQtiTether.so|fd264dfd66adcd2e9cd3cfede778f1387bdc6423
+vendor/lib64/libconnctrl.so|928acb9878e865493a37ad4a94ce29e95c616745
+vendor/lib64/libQtiTether.so|811873a0e84c5f2c064cbcd339e1e23263a4415f
 
 # Perf - from santoni (Redmi 4X)
-bin/iop
-bin/msm_irqbalance
-lib64/libqti-iop.so
-lib64/libqti_performance.so
-lib/libqti_performance.so
-vendor/bin/perfd
-vendor/etc/msm_irqbalance.conf
-vendor/lib/libqc-opt.so
-vendor/lib/libqti-iop-client.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib64/libqc-opt.so
-vendor/lib64/libqti-at.so
-vendor/lib64/libqti-gt.so
-vendor/lib64/libqti-iop-client.so
-vendor/lib64/libqti-perfd-client.so
+bin/iop|f2a1040ea51ed13769ba26b0abb7872e915b3919
+bin/msm_irqbalance|ab907828fa49dbc2f37e863ef877fdcef2cd1cf6
+lib64/libqti-iop.so|8fc3b5b10f81a4a186f39a9a82a777964f63eaa9
+lib64/libqti_performance.so|8310c67a9f12b587e42c2daee98a9d9898bdef05
+lib/libqti_performance.so|bd683808b1f09a3987d43ae8f62defd10f55d10e
+vendor/bin/perfd|f20134d2f7e637040de086f988438404a4bbfd58
+vendor/etc/msm_irqbalance.conf|3e45e1da03ab49ce9d3f855011aca00f1e417a53
+vendor/lib/libqc-opt.so|9405e2efa45ff20af634baa194817e017d6ef108
+vendor/lib/libqti-iop-client.so|b83b7eda3f5cb9e6b403bf23d33aade6486eacbe
+vendor/lib/libqti-perfd-client.so|006a867d373b58152f5ad5ebd86956957c85dfff
+vendor/lib64/libqc-opt.so|eafd0e84759b8ed74c542aa1811cdbf619621c2a
+vendor/lib64/libqti-at.so|6d2f9cfe8b550637ee4644b1b0fafa47248faa07
+vendor/lib64/libqti-gt.so|52ab37b7640542712634539df3c67ddbc90caacb
+vendor/lib64/libqti-iop-client.so|1cd7b210a2026fd80917f09b41396ad63645d771
+vendor/lib64/libqti-perfd-client.so|6362954b2208611ffe831fd747797d570141c595
 
 # Peripheral manager - from santoni (Redmi 4X)
-bin/pm-proxy
-bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+bin/pm-proxy|5f085bf05e7b2aab4f41b1c005e27c3360d35aba
+bin/pm-service|5987e449873fb249efa0027bbe3067c97f070e4d
+vendor/lib/libperipheral_client.so|04c41cd6aeaf635bf999646a144496d033b499b2
+vendor/lib64/libperipheral_client.so|0a93aec8c80811c040b36cf52331a4e25426aad8
 
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
@@ -1407,85 +1407,85 @@ vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
 
 # QMI - from santoni (Redmi 4X)
-bin/irsc_util
-etc/permissions/qti_permissions.xml
-vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
-vendor/lib/libqcci_legacy.so
-vendor/lib/libqcmaputils.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so
-vendor/lib/libqti-wl.so
-vendor/lib/libquipc_os_api.so
-vendor/lib/libsmemlog.so
-vendor/lib64/libdiag.so
-vendor/lib64/libdsi_netctrl.so
-vendor/lib64/libdsutils.so
-vendor/lib64/libidl.so
-vendor/lib64/libqcci_legacy.so
-vendor/lib64/libqcmaputils.so
-vendor/lib64/libqdi.so
-vendor/lib64/libqdp.so
-vendor/lib64/libqmi.so
-vendor/lib64/libqmi_cci.so
-vendor/lib64/libqmi_client_helper.so
-vendor/lib64/libqmi_client_qmux.so
-vendor/lib64/libqmi_common_so.so
-vendor/lib64/libqmi_csi.so
-vendor/lib64/libqmi_encdec.so
-vendor/lib64/libqmiservices.so
-vendor/lib64/libqti-wl.so
-vendor/lib64/libquipc_os_api.so
-vendor/lib64/libsmemlog.so
+bin/irsc_util|61daf9e12b48e24f1624edce287a5a10849f03db
+etc/permissions/qti_permissions.xml|fd8a1db3c18b6d58334d747e47f4b155bb612039
+vendor/lib/libdiag.so|1d0178725a448c7432382578e69422e50c321366
+vendor/lib/libdsi_netctrl.so|a578af2944c07ed3bc49462660770a1eb7a61cde
+vendor/lib/libdsutils.so|1f54803e953194b7b15b3cbeaa3069b31a24e7f3
+vendor/lib/libidl.so|eadf4f3f7d25ec642cc457d4f6d16912682b0508
+vendor/lib/libqcci_legacy.so|8dd555c11eca9785429d1daa0b52cfe2cdc73106
+vendor/lib/libqcmaputils.so|aedb3853d992ede6182f51592c0f57fa37b837d1
+vendor/lib/libqdi.so|e3c5feefdcf0354de4b851c652db4999fba20fa4
+vendor/lib/libqdp.so|f81458516772f7632b3545a9a55b9ce2ae712cde
+vendor/lib/libqmi.so|523ccef48c65bd4ed1e03fb2079fc009de656c40
+vendor/lib/libqmi_cci.so|464c605657795058d180bb3d4ad2cee7ae6489ce
+vendor/lib/libqmi_client_helper.so|16a29bb4c77785f81da9f3f1d66a371cf4e61b0b
+vendor/lib/libqmi_client_qmux.so|6c97690e6815f3be122b6165b63a1a4fac7ad627
+vendor/lib/libqmi_common_so.so|1f38f77da048d51297091bb9f4ccac7462edaf91
+vendor/lib/libqmi_csi.so|378f701aa7497c0188e9c9d455104f5e07e1131c
+vendor/lib/libqmi_encdec.so|cab1c426bd8673f5e98f847cb0a95adc5d2978f4
+vendor/lib/libqmiservices.so|cf54419cd43e1f8e712f54d174cc3c7200570e08
+vendor/lib/libqti-wl.so|0be08dfe076634c153826a7ed595962d1266d8e6
+vendor/lib/libquipc_os_api.so|3a71aff326a2a8c6ccefe84ca9c18fcd3b767b6f
+vendor/lib/libsmemlog.so|c632a70764ee1d6416ce1758f4d10cd6983d204d
+vendor/lib64/libdiag.so|60ead7a72815d7a0f6d54177b0da9500e1b0f143
+vendor/lib64/libdsi_netctrl.so|94b376fb5684463354bff41dae9e7c043e80a067
+vendor/lib64/libdsutils.so|3e43e4224048d1d1841e7dd54b584e9d1319272d
+vendor/lib64/libidl.so|6ea6c40d4ad8f40cf21fc0a350c8d019aaeb5727
+vendor/lib64/libqcci_legacy.so|876690188623c8ba231caccc5e838a6f529e5807
+vendor/lib64/libqcmaputils.so|91f0dbf4850f86c37ff5b9b594f4d511b4bc65a4
+vendor/lib64/libqdi.so|db1c163f54d805ce4308f71a3c238c3df092a12e
+vendor/lib64/libqdp.so|0a1433af83af589643dab032aae55b097b1026fb
+vendor/lib64/libqmi.so|fab763b0301a514b0a26c8660e808fed01e5cfec
+vendor/lib64/libqmi_cci.so|c1441d222910fad1d12b542486fb65874283c36a
+vendor/lib64/libqmi_client_helper.so|527b6884b9a3ba11b409432fb9e5aa06db290795
+vendor/lib64/libqmi_client_qmux.so|a337e955b2ec8c14a9e9bbc067bb9932f20d0403
+vendor/lib64/libqmi_common_so.so|cc05f1b5b9de73d2b99a7947b651c77f08b2f3a0
+vendor/lib64/libqmi_csi.so|15d92384e82263a03c6b8c4cd45f09279c39b71c
+vendor/lib64/libqmi_encdec.so|6caecb2e8627f6c670f8d173f416162eb6987b4a
+vendor/lib64/libqmiservices.so|38dc0097b5329f950518148019e156a8a27ab9b5
+vendor/lib64/libqti-wl.so|b4560041fd7b3b420b1b0dd11de9c583a729f0f4
+vendor/lib64/libquipc_os_api.so|dc85ee4e026b852ddaca580aaf2596e4ee44a520
+vendor/lib64/libsmemlog.so|3acaf2b0abef1089f817557a1817ebc205557d68
 
 # Radio - from santoni (Redmi 4X)
--app/datastatusnotification/datastatusnotification.apk
--app/fastdormancy/fastdormancy.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/shutdownlistener/shutdownlistener.apk
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rmt_storage
-bin/tftp_server
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
-etc/data/qmi_config.xml
-etc/permissions/embms.xml
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/telephonyservice.xml
-framework/embmslibrary.jar
--framework/qcnvitems.jar
--framework/qcrilhook.jar
-framework/qti-telephony-common.jar
-framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/bin/qti
-vendor/lib/liblqe.so
-vendor/lib/libmdmdetect.so
-vendor/lib64/libconfigdb.so
-vendor/lib64/liblqe.so
-vendor/lib64/libmdmdetect.so
-vendor/lib64/libnetmgr.so
-vendor/lib64/libril-qc-qmi-1.so
-vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril-qcril-hook-oem.so
-vendor/lib64/libsystem_health_mon.so
-vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/librilqmiservices.so
-vendor/lib64/libsettings.so
-vendor/qcril.db
+-app/datastatusnotification/datastatusnotification.apk|10258ec6c746844ba7b4c069a7ed9a73b2fe858f
+-app/fastdormancy/fastdormancy.apk|68fb1bb0854ad9a26aaf5dbd5a477d44204ad62d
+-app/QtiTelephonyService/QtiTelephonyService.apk|3f36e3d6be211a08006ce242dcc2096862bf709f
+-app/shutdownlistener/shutdownlistener.apk|0bfe420b25652ce376d5755e5c42576e96c8f3f7
+bin/netmgrd|1cd26d4a6ab18f910e47fb23b90839d87175bba6
+bin/qmuxd|7a7583c13bdfd12138a8a40051438623851cc9cd
+bin/radish|dd8c0bd6f22cb513e8665c6f1c50b37bbf896fb3
+bin/rmt_storage|841e306b40c022cda3e41a29fb8861ad177f729e
+bin/tftp_server|f2b8e205d42ac8c673b42b8f7f598fd5a419f340
+etc/data/dsi_config.xml|c4f6518596a519e9838159b1eaa99fa2ad86e24d
+etc/data/netmgr_config.xml|11460248c7205863b95be2fe98739ba4c061329e
+etc/data/qmi_config.xml|75273b1456b39ffc4ca609ec034a12cb311a7c8d
+etc/permissions/embms.xml|5e1b492874c221a7e1188fc3a5369d32b3e67969
+etc/permissions/qcnvitems.xml|dc0e70cace2317b5169a454cbc2bbf8887c18d55
+etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
+etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
+framework/embmslibrary.jar|a06799495515305de3e5d432ec62a1f692200c99
+-framework/qcnvitems.jar|5bd32978b6b6239bb17b6c04d54e4f1c76f52dbc
+-framework/qcrilhook.jar|1c4a3b6c62519298b326d893e9ce86a1a056982c
+framework/qti-telephony-common.jar|37d692fb171d0ee3269676a9e9998d2e3bfd9488
+framework/QtiTelephonyServicelibrary.jar|963290f0b6c0536e4905c21ea8384b933bd5b1e5
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|8d0dac3eb1b87298ea89d6c6bb4cfadc3d136903
+vendor/bin/qti|9a8ca870cf8d29822382933c8d09a4141524b4de
+vendor/lib/liblqe.so|d094c8040ccd5970b05c7e4fb71b7e4e635e7a85
+vendor/lib/libmdmdetect.so|51c1de346be6ab9796c20595413524d2fff36488
+vendor/lib64/libconfigdb.so|b8eede674a74ad5e4d80ef568b648d5d150dcfdd
+vendor/lib64/liblqe.so|0205b023910004a0d5ed2d65e89cea10e697ad7a
+vendor/lib64/libmdmdetect.so|bf83e5ae914f04a0aaafca31c23cf0a3de0b908b
+vendor/lib64/libnetmgr.so|b8548379466cfb76865c9e8ad6781f4f969fad8d
+vendor/lib64/libril-qc-qmi-1.so|fdbb9cb8be8c1d70cd74c57a6c62e5b32535d863
+vendor/lib64/libril-qc-radioconfig.so|5e17f24f6cf6b33597fe548c7dcde316bbc93041
+vendor/lib64/libril-qcril-hook-oem.so|21a73595490f7c9e1d5a3c6b1f37cd48c09cc851
+vendor/lib64/libsystem_health_mon.so|b1bcf8357fb489af2efa4dba9ea31f409a2ac41c
+vendor/lib64/libril-qc-ltedirectdisc.so|3f0e6eb7616e6c95ed09d71b54fef80ca67f55a5
+vendor/lib64/librilqmiservices.so|a896aa0c43b6743d4c6fb8ca48b14887526c3de7
+vendor/lib64/libsettings.so|d6a905f02eb5c500db1ab28914d58a54dc6bcd96
+vendor/qcril.db|7519ccf9924a5e054d7ad18a9747f6a31e797ff8
 
 # Radio - IMS - from marmite (Wileyfox Swift 2/Plus/X)
 bin/ims_rtp_daemon|1a3dc8ba908e614ca8d8dcd691c1f6288bc481e7
@@ -1569,34 +1569,34 @@ lib/hw/consumerir.default.so
 lib64/hw/consumerir.default.so
 
 # Sensors - from santoni (Redmi 4X)
-bin/sensors.qcom
-vendor/lib/hw/activity_recognition.msm8937.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/sensor_calibrate.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/hw/activity_recognition.msm8937.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/sensor_calibrate.so
-vendor/lib64/sensors.ssc.so
+bin/sensors.qcom|a8da34227623dc93f4afc1178da0983ac6c53fcd
+vendor/lib/hw/activity_recognition.msm8937.so|fadf5cb62913aedcb9605074023eb8e1e66563b4
+vendor/lib/libsensor1.so|614e564e8948d6f676c55656e1b568722c24c870
+vendor/lib/libsensor_reg.so|77c17234d8cf9e40c8be77be4982164b9db3401e
+vendor/lib/sensor_calibrate.so|0152357b0fc9b549cbdf781280f70186b6efe913
+vendor/lib/sensors.ssc.so|0d4ae19acc1461796db8e56ee093c84400a3a91d
+vendor/lib64/hw/activity_recognition.msm8937.so|1f7ad65956981c5c59e773f8fa029541d8e6b931
+vendor/lib64/libsensor1.so|655ce60c9ad6250c824922d7ea8617fc4b766d4a
+vendor/lib64/libsensor_reg.so|3b56ecae4104312c8787abc38ad5a93939be9aed
+vendor/lib64/sensor_calibrate.so|4117e78ad63faeb9a3bb1ac0d951524c781e1802
+vendor/lib64/sensors.ssc.so|e3b629f2e0f43a993cd7489a167dfadc8dea3e70
 
 # Subsystem restart
 bin/ssr_diag
 
 # Thermal - from santoni (Redmi 4X)
-vendor/bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+vendor/bin/thermal-engine|3586940bce01871be5aaf5c0700d769a7e709d0a
+vendor/lib/libthermalclient.so|580966926e8045632d196dcc21fb5ca49b5eba4e
+vendor/lib64/libthermalclient.so|bcd8215fcbf7be2922970c77c73979830a9cd1f3
+vendor/lib64/libthermalioctl.so|d5c12338e56e05d3ddbffbba915b8ce6878a9485
 
 # Time services - from santoni (Redmi 4X)
 -app/TimeService/TimeService.apk|cf992f00c8e73463b26f0ea6828522a3edfcdbb4
-bin/time_daemon
--vendor/lib/libtime_genoff.so
-vendor/lib/libTimeService.so
--vendor/lib64/libtime_genoff.so
-vendor/lib64/libTimeService.so
+bin/time_daemon|f8a7da44ae33e2506c30725f752be595f24c3f0d
+-vendor/lib/libtime_genoff.so|b24eb6563980cd05296b60e73cc3a970d1336357
+vendor/lib/libTimeService.so|d9132545767a5379b611bdce615ab6f18582f902
+-vendor/lib64/libtime_genoff.so|7c300ea21df671efbf94a41c7687c1af16029817
+vendor/lib64/libTimeService.so|e85f693c78808e20e9ae54117277bb2a89316bf5
 
 # Touchscreen
 etc/ft5336_biel_720p.ini
