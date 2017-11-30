@@ -21,8 +21,8 @@
   } ,
   {
     "remote":      "github",
-    "repository":  "nichcream/packages_apps_SnapdragonCamera",
+    "repository":  "packages_apps_SnapdragonCamera",
     "target_path": "packages/apps/SnapdragonCamera",
-    "branch":      "n7.1-8937"
+    "branch":      "n7.1"
   }  
 ]
