@@ -1,4 +1,4 @@
-# ADSP
+# ADSP - from santoni (Redmi 4X)
 bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
@@ -105,13 +105,13 @@ etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
-# Bluetooth
+# Bluetooth - from santoni (Redmi 4X)
 bin/btnvtool
 bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 vendor/lib64/libbtnv.so
 
-# CNE
+# CNE - from santoni (Redmi 4X)
 bin/cnd
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
@@ -1054,7 +1054,7 @@ vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so
 # Charger
 bin/hvdcp_opti
 
-# DPM
+# DPM - from santoni (Redmi 4X)
 bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
@@ -1118,11 +1118,11 @@ lib64/libfp_client.so
 lib64/libfpnav.so
 lib64/libfpservice.so
 
-# Gatekeeper
+# Gatekeeper - from santoni (Redmi 4X)
 vendor/lib/hw/gatekeeper.msm8937.so
 vendor/lib64/hw/gatekeeper.msm8937.so
 
-# GPS
+# GPS - from santoni (Redmi 4X)
 bin/loc_launcher
 bin/lowi-server
 bin/xtwifi-client
@@ -1278,7 +1278,7 @@ vendor/lib64/libsdmextension.so|621a57559b40d459c4da42c149599082a5f94942
 vendor/lib64/libuiblur.so|4b3fabf5ded7c4af531abde681676fc5e9248494
 vendor/lib64/hw/vulkan.msm8937.so|7689a5f48716a871c0e42337f38e80bafbe04633
 
-# Graphics firmware
+# Graphics firmware - from santoni (Redmi 4X)
 etc/firmware/a530_gpmu.fw2
 etc/firmware/a530_pfp.fw
 etc/firmware/a530_pm4.fw
@@ -1307,7 +1307,7 @@ lib64/hw/keystore.default.so|395e0c74b5c7a1d27fd8400745c8b4d792d2c5a6
 vendor/lib/hw/keystore.msm8937.so|2e93bba00f17931a02354f05ab83b25da4cc172a
 vendor/lib64/hw/keystore.msm8937.so|c3a99d799c53c153f4d7f3f758d60923b8c1cda5
 
-# Listen
+# Listen - from santoni (Redmi 4X)
 vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
@@ -1364,18 +1364,18 @@ vendor/lib64/libOmxWmaDec.so|524a82675bcdbffed9f81c83e97dea2691d311dc
 vendor/media/LMspeed_508.emd|392b2150ecd454501a5951874a002ba80e40fc74
 vendor/media/PFFprec_600.emd|2e9e82a710ddeffa2ceb16bbbff980cd4013b3d8
 
-# Modem
+# Modem - from santoni (Redmi 4X)
 vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
-# Network
+# Network - from santoni (Redmi 4X)
 -priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib/libconnctrl.so
 vendor/lib/libQtiTether.so
 vendor/lib64/libconnctrl.so
 vendor/lib64/libQtiTether.so
 
-# Perf
+# Perf - from santoni (Redmi 4X)
 bin/iop
 bin/msm_irqbalance
 lib64/libqti-iop.so
@@ -1392,7 +1392,7 @@ vendor/lib64/libqti-gt.so
 vendor/lib64/libqti-iop-client.so
 vendor/lib64/libqti-perfd-client.so
 
-# Peripheral manager
+# Peripheral manager - from santoni (Redmi 4X)
 bin/pm-proxy
 bin/pm-service
 vendor/lib/libperipheral_client.so
@@ -1406,7 +1406,7 @@ vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
 
-# QMI
+# QMI - from santoni (Redmi 4X)
 bin/irsc_util
 etc/permissions/qti_permissions.xml
 vendor/lib/libdiag.so
@@ -1448,7 +1448,7 @@ vendor/lib64/libqti-wl.so
 vendor/lib64/libquipc_os_api.so
 vendor/lib64/libsmemlog.so
 
-# Radio
+# Radio - from santoni (Redmi 4X)
 -app/datastatusnotification/datastatusnotification.apk
 -app/fastdormancy/fastdormancy.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
@@ -1568,7 +1568,7 @@ etc/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn
 lib/hw/consumerir.default.so
 lib64/hw/consumerir.default.so
 
-# Sensors
+# Sensors - from santoni (Redmi 4X)
 bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/libsensor1.so
@@ -1584,13 +1584,13 @@ vendor/lib64/sensors.ssc.so
 # Subsystem restart
 bin/ssr_diag
 
-# Thermal
+# Thermal - from santoni (Redmi 4X)
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services
+# Time services - from santoni (Redmi 4X)
 -app/TimeService/TimeService.apk|cf992f00c8e73463b26f0ea6828522a3edfcdbb4
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
