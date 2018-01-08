@@ -471,15 +471,17 @@ vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
+vendor/media/LMspeed_508.emd
+vendor/media/PFFprec_600.emd
 
 # Media - from santoni (Redmi 4X)
 etc/firmware/DE.o.msm8937
-lib/libOmxSwVdec.so
-lib/libOmxSwVencMpeg4.so
-lib64/libOmxSwVdec.so
-lib64/libOmxSwVencMpeg4.so
-vendor/media/LMspeed_508.emd
-vendor/media/PFFprec_600.emd
+lib/libOmxSwVdec.so:vendor/lib/libOmxSwVdec.so
+lib/libOmxSwVencMpeg4.so:vendor/lib/libOmxSwVencMpeg4.so
+lib64/libOmxSwVdec.so:vendor/lib64/libOmxSwVdec.so
+lib64/libOmxSwVencMpeg4.so:vendor/lib64/libOmxSwVencMpeg4.so
+vendor/lib/libMpeg4SwEncoder.so
+vendor/lib64/libMpeg4SwEncoder.so
 
 # Modem - from tissot (Mi A1)
 vendor/lib/libwms.so
