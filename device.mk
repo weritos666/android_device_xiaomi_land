@@ -129,13 +129,15 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 # Camera
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     mm-qcamera-app \
     camera.msm8937 \
     libmm-qcamera \
     libmmcamera_interface \
     libmmjpeg_interface \
     libqomx_core \
+    
+PRODUCT_PACKAGES += \
     SnapdragonCamera
 
 PRODUCT_PACKAGES += \
