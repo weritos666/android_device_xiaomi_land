@@ -1128,13 +1128,12 @@
 
     <!-- Dual MIC devices -->
     <path name="speaker-dmic-endfire">
-        <path name="adc1" />
+        <path name="adc3" />
 <!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC3 Volume" value="8" />
+        <ctl name="ADC1 Volume" value="8" />
 <!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="DEC2 MUX" value="ADC2" />
+        <ctl name="DEC2 MUX" value="ADC1" />
         <ctl name="MI2S_TX Channels" value="Two" />
-        <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="dmic-endfire">
