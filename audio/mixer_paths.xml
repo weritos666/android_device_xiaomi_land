@@ -584,8 +584,6 @@
     </path>
 
     <path name="voice-call">
-	<ctl name="DEC1 Volume" value="84" />
-	<ctl name="DEC2 Volume" value="84" />
         <ctl name="PRI_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
     </path>
@@ -944,20 +942,20 @@
     <!-- These are actual sound device specific mixer settings -->
     <path name="adc1">
 <!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="8" />
         <ctl name="DEC1 MUX" value="ADC1" />
 <!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
     </path>
 
     <path name="adc2">
 <!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC2 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="8" />
 <!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="MICBIAS CAPLESS Switch" value="1" />
     </path>
     <path name="adc3">
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="ADC3 Volume" value="8" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
@@ -1012,8 +1010,6 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-        <ctl name="DEC1 Volume" value="92" />
-        <ctl name="DEC2 Volume" value="92" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
@@ -1134,7 +1130,7 @@
     <path name="speaker-dmic-endfire">
         <path name="adc1" />
 <!-- +bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="ADC3 Volume" value="8" />
 <!-- -bug 196716,zhangjianming.wt,ADD,20160111,other can not reciving sound  -->
         <ctl name="DEC2 MUX" value="ADC2" />
         <ctl name="MI2S_TX Channels" value="Two" />
@@ -1166,8 +1162,6 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <ctl name="DEC1 Volume" value="92" />
-        <ctl name="DEC2 Volume" value="92" />
         <path name="speaker-dmic-endfire" />
     </path>
 
