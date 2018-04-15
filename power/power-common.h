@@ -51,12 +51,4 @@ enum CPU_GOV_CHECK {
     CPU3 = 3
 };
 
-enum {
-    PROFILE_POWER_SAVE = 0,
-    PROFILE_BALANCED,
-    PROFILE_HIGH_PERFORMANCE,
-    PROFILE_BIAS_POWER,
-    PROFILE_BIAS_PERFORMANCE
-};
-
 #define UNUSED(x) UNUSED_ ## x __attribute__((__unused__))

@@ -54,79 +54,6 @@ static int video_encode_hint_sent;
 
 extern void interaction(int duration, int num_args, int opt_list[]);
 
-static int current_power_profile = PROFILE_BALANCED;
-
-static int profile_high_performance[] = {
-    SCHED_BOOST_ON_V3, 0x1,
-    ALL_CPUS_PWR_CLPS_DIS_V3, 0x1,
-    CPUS_ONLINE_MIN_BIG, 0x4,
-    MIN_FREQ_BIG_CORE_0, 0xFFF,
-    MIN_FREQ_LITTLE_CORE_0, 0xFFF,
-    GPU_MIN_PWRLVL_BOOST, 0x1,
-    SCHED_PREFER_IDLE_DIS_V3, 0x1,
-    SCHED_SMALL_TASK_DIS, 0x1,
-    SCHED_IDLE_NR_RUN_DIS, 0x1,
-    SCHED_IDLE_LOAD_DIS, 0x1,
-};
-
-static int profile_power_save[] = {
-    CPUS_ONLINE_MAX_LIMIT_BIG, 0x1,
-    MAX_FREQ_BIG_CORE_0, 0x3bf,
-    MAX_FREQ_LITTLE_CORE_0, 0x300,
-};
-
-static int profile_bias_power[] = {
-    MAX_FREQ_BIG_CORE_0, 0x4B0,
-    MAX_FREQ_LITTLE_CORE_0, 0x300,
-};
-
-static int profile_bias_performance[] = {
-    CPUS_ONLINE_MAX_LIMIT_BIG, 0x4,
-    MIN_FREQ_BIG_CORE_0, 0x540,
-};
-
-#ifdef INTERACTION_BOOST
-int get_number_of_profiles() {
-    return 5;
-}
-#endif
-
-static void set_power_profile(int profile) {
-
-    if (profile == current_power_profile)
-        return;
-
-    ALOGV("%s: profile=%d", __func__, profile);
-
-    if (current_power_profile != PROFILE_BALANCED) {
-        undo_hint_action(DEFAULT_PROFILE_HINT_ID);
-        ALOGV("%s: hint undone", __func__);
-    }
-
-    if (profile == PROFILE_HIGH_PERFORMANCE) {
-        perform_hint_action(DEFAULT_PROFILE_HINT_ID, profile_high_performance,
-                ARRAY_SIZE(profile_high_performance));
-        ALOGD("%s: set performance mode", __func__);
-
-    } else if (profile == PROFILE_POWER_SAVE) {
-        perform_hint_action(DEFAULT_PROFILE_HINT_ID, profile_power_save,
-                ARRAY_SIZE(profile_power_save));
-        ALOGD("%s: set powersave", __func__);
-
-    } else if (profile == PROFILE_BIAS_POWER) {
-        perform_hint_action(DEFAULT_PROFILE_HINT_ID, profile_bias_power,
-                ARRAY_SIZE(profile_bias_power));
-        ALOGD("%s: Set bias power mode", __func__);
-
-    } else if (profile == PROFILE_BIAS_PERFORMANCE) {
-        perform_hint_action(DEFAULT_PROFILE_HINT_ID, profile_bias_performance,
-                ARRAY_SIZE(profile_bias_performance));
-        ALOGD("%s: Set bias perf mode", __func__);
-    }
-
-    current_power_profile = profile;
-}
-
 static void process_video_encode_hint(void *metadata)
 {
     char governor[80];
@@ -199,16 +126,6 @@ int power_hint_override(power_hint_t hint, void *data)
         MIN_FREQ_BIG_CORE_0, 0x514,
         SCHED_BOOST_ON_V3, 0x1,
     };
-
-    if (hint == POWER_HINT_SET_PROFILE) {
-        set_power_profile(*(int32_t *)data);
-        return HINT_HANDLED;
-    }
-
-    // Skip other hints in low power mode
-    if (current_power_profile == PROFILE_POWER_SAVE) {
-        return HINT_HANDLED;
-    }
 
     switch (hint) {
     	case POWER_HINT_INTERACTION:
