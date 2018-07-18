@@ -1,7 +1,6 @@
-# Fpc Fingerprint
-/dev/socket/fpce                                         u:object_r:fpc_socket:s0
+# FPC Fingerprint
 /data/fpc(/.*)?                                          u:object_r:fpc_data_file:s0
-/data/fpcd(/.*)?                                         u:object_r:fpc_data_file:s0
+/dev/socket/fpce                                         u:object_r:fpc_socket:s0
 /sys/devices/soc/soc:fpc1020(/.*)?                       u:object_r:fpc_sysfs:s0
 
 # Goodix Fingerprint
@@ -13,15 +12,15 @@
 /data/system/fingerprint(/.*)?              u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?                    u:object_r:gx_fpd_data_file:s0
 
+# Lights / IR Blaster
+/sys/devices/soc/[a-z0-9]+\.sdhci/leds(/.*)?                                u:object_r:sysfs_leds:s0
+/sys/devices/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/leds(/.*)?      u:object_r:sysfs_leds:s0
+/sys/devices/soc/leds-qpnp-[0-9]+/leds(/.*)?                                u:object_r:sysfs_leds:s0
+/sys/devices/soc/soc:gpio-leds/leds(/.*)?                                   u:object_r:sysfs_leds:s0
+
 # HIDL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service.custom                 u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service.land      u:object_r:hal_power_default_exec:s0
 
 # Block devices
 /dev/block/bootdevice/by-name/persist		u:object_r:persist_block_device:s0
-
-# Data files
-/data/misc/netmgr/log\.txt			u:object_r:netmgrd_data_file:s0
-
-# rmt_storage debugfs
-/sys/kernel/debug/rmt_storage(/.*)?                  u:object_r:qti_debugfs:s0

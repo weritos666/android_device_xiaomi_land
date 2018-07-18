@@ -71,14 +71,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
 
+# Additional native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
 
-#Audio
+# Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
     audio.a2dp.default \
     audio.primary.msm8937 \
     audio.r_submix.default \
@@ -89,12 +97,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libvolumelistener \
     tinymix
-
-PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.soundtrigger@2.0-impl
 
 # Audio mixer
 PRODUCT_COPY_FILES += \
@@ -123,6 +125,12 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0_vendor \
     mm-qcamera-app \
     camera.msm8937 \
     libmm-qcamera \
@@ -131,27 +139,14 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     Snap
 
-PRODUCT_PACKAGES += \
-    SnapdragonCamera
-
-PRODUCT_PACKAGES += \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0_vendor
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
 
-# Consumerir
-PRODUCT_PACKAGES += \
-    consumerir.msm8937
-
+# ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Display
 PRODUCT_PACKAGES += \
@@ -162,7 +157,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libhwc2on1adapter \
     libgenlock \
-    libtinyxml
+    libtinyxml \
+    libqdMetaData.system
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -176,16 +172,18 @@ PRODUCT_PACKAGES += \
 
 # Display calibration
 PRODUCT_PACKAGES += \
-    libjni_livedisplay
+    vendor.lineage.livedisplay@1.0-service-sdm
+
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite
-
-PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.0-service.widevine
+    android.hardware.drm@1.0-service.widevine \
+    libprotobuf-cpp-lite
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -201,20 +199,16 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# GNSS HAL
+# GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
-    android.hardware.gnss@1.0-service-qti
-
-# GPS
-PRODUCT_BOOT_JARS += \
-    com.qti.location.sdk
-
-PRODUCT_PACKAGES += \
-    gps.msm8937 \
+    android.hardware.gnss@1.0-service-qti \
     libgnss \
     libgnsspps \
     libcurl
+
+PRODUCT_BOOT_JARS += \
+    com.qti.location.sdk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -233,9 +227,9 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java \
-    android.hidl.base@1.0
+    android.hidl.manager@1.0-java
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml
@@ -246,16 +240,14 @@ PRODUCT_PACKAGES += \
 
 # Init scripts ramdisk
 PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc \
+    init.qcom.rc \
     init.qcom.power.rc \
     init.qcom.usb.rc \
-    init.qcom.usb.sh
-
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.rc \
+    ueventd.qcom.rc \
+    init.qcom.usb.sh \
     init.qcom.sh \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    fstab.qcom
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -272,16 +264,14 @@ PRODUCT_PACKAGES += \
 
 # Libshims
 PRODUCT_PACKAGES += \
-    libshim_c \
-    libshim_cameraservice
+    libshim_cameraservice \
+    libshim_pthreadts
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8937
-
-PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service
+    android.hardware.light@2.0-service \
+    lights.msm8937
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -289,6 +279,7 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
     libc2dcolorconvert \
     libmm-omxcore \
     libOmxAacEnc \
@@ -299,9 +290,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -315,8 +303,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
     android.system.net.netd@1.0 \
-    libandroid_net \
-    libandroid_net_32
+    libandroid_net
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -344,8 +331,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.msm8937 \
-    android.hardware.power@1.0-service.land
+    android.hardware.power@1.0-service.land \
+    power.msm8937
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -359,7 +346,6 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
     libprotobuf-cpp-full \
-    libqdMetaData.system \
     libxml2
 
 # Seccomp policy
@@ -390,13 +376,12 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    thermal.msm8937 \
     android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service
+    android.hardware.thermal@1.0-service \
+    thermal.msm8937
 
-# USB HAL
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -407,18 +392,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
-# WiFi HAL
+# WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
-
-# Wi-Fi
-PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     libcld80211 \
     hostapd \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     wificond \
-    wifilogd \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf

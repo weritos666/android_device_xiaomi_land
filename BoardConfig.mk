@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-#           (C) 2017 The LineageOS Project
 # Copyright (C) 2017 The XPerience Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/land
-
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Architecture
 TARGET_ARCH 	    	:= arm64
@@ -125,6 +123,9 @@ TARGET_TS_MAKEUP             := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Clang
+INTERNAL_LOCAL_CLANG_EXCEPTION_PROJECTS += $(DEVICE_PATH)
+
 # CNE / DPM
 BOARD_USES_QCNE := true
 
@@ -176,6 +177,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_land
 TARGET_PROVIDES_KEYMASTER := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Lockscreen real time charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
@@ -187,6 +191,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 3119513600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 10365157376 #10365173760 - 16384 use the 16gb version
 BOARD_FLASH_BLOCK_SIZE 		   := 131072
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE  := ext4
+TARGET_USES_MKE2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -195,7 +200,6 @@ TARGET_PER_MGR_ENABLED := true
 
 # QCOM support
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_USE_SDCLANG := true
 
 # RIL
 TARGET_RIL_VARIANT := caf
@@ -206,6 +210,10 @@ TARGET_RECOVERY_FSTAB 		 := $(DEVICE_PATH)/rootdir/fstab.qcom
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+# Shims
+TARGET_LD_SHIM_LIBS := /vendor/bin/mm-qcamera-daemon|libshim_pthreadts.so \
+    /system/bin/cameraserver|libshim_cameraservice.so
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
