@@ -18,19 +18,14 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include <cutils/properties.h>
 #include <string.h>
+#include "osi/include/properties.h"
  
 inline const char* BtmGetDefaultName()
 {
-	char board_id[PROPERTY_VALUE_MAX];
-	property_get("ro.product.wt.boardid", board_id, "");
-
-	if (!strcmp("S88537AB1", board_id)) {
-		return "Xiaomi Redmi 3X";
-	}
-
-	return "Xiaomi Redmi 3S";
+    char board_id[PROPERTY_VALUE_MAX];
+    osi_property_get("ro.product.wt.boardid", board_id, "");
+    return !strcmp("S88537AB1", board_id) ? "Xiaomi Redmi 3X" : "Xiaomi Redmi 3S";
 }
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
