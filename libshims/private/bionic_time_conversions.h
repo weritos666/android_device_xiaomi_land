@@ -42,6 +42,9 @@ __LIBC_HIDDEN__ void timespec_from_ms(timespec& ts, const int ms);
 
 __LIBC_HIDDEN__ void timeval_from_timespec(timeval& tv, const timespec& ts);
 
+__LIBC_HIDDEN__ void monotonic_time_from_realtime_time(timespec& monotonic_time,
+                                                       const timespec& realtime_time);
+
 __END_DECLS
 
 static inline int check_timespec(const timespec* ts, bool null_allowed) {
@@ -54,7 +57,7 @@ static inline int check_timespec(const timespec* ts, bool null_allowed) {
   // < 1000000000L such that tv_nsec doesn't overflow and passes check_timespec().
   while (ts->tv_nsec >= NS_PER_S) {
     const_cast<timespec*>(ts)->tv_nsec -= NS_PER_S;
-    const_cast<timespec*>(ts)->tv_sec += 1;
+    const_cast<timespec*>(ts)->tv_sec++;
   }
 #endif
   // glibc just segfaults if you pass a null timespec.
