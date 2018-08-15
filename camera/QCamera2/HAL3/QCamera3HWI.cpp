@@ -8474,10 +8474,17 @@ int QCamera3HardwareInterface::translateToHalMetadata
 
     if (frame_settings.exists(ANDROID_COLOR_CORRECTION_GAINS)) {
         cam_color_correct_gains_t colorCorrectGains;
+#if 0
         for (size_t i = 0; i < CC_GAINS_COUNT; i++) {
             colorCorrectGains.gains[i] =
                     frame_settings.find(ANDROID_COLOR_CORRECTION_GAINS).data.f[i];
         }
+#else
+        /* HAX: Backend reads in R G B, but framework sends in R Gr Gb B. Fix the value for B. */
+        colorCorrectGains.gains[0] = frame_settings.find(ANDROID_COLOR_CORRECTION_GAINS).data.f[0];
+        colorCorrectGains.gains[1] = frame_settings.find(ANDROID_COLOR_CORRECTION_GAINS).data.f[1];
+        colorCorrectGains.gains[2] = frame_settings.find(ANDROID_COLOR_CORRECTION_GAINS).data.f[3];
+#endif
         if (ADD_SET_PARAM_ENTRY_TO_BATCH(hal_metadata, CAM_INTF_META_COLOR_CORRECT_GAINS,
                 colorCorrectGains)) {
             rc = BAD_VALUE;
