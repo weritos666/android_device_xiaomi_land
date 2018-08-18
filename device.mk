@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
 
 # Libshims
 PRODUCT_PACKAGES += \
+    libshim_bionicapi \
     libshim_cameraservice \
     libshim_pthreadts
 
