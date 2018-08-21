@@ -35,6 +35,7 @@
 #include <time.h>
 #include <unistd.h>
 
+#include "private/bionic_lock.h"
 #include "private/bionic_futex.h"
 #include "private/bionic_time_conversions.h"
 
